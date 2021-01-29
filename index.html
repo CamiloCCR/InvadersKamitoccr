@@ -12,7 +12,9 @@
                     <img alt="logo de la empresa" src="imagenes/logo.jpg">
                         <a href="index.html">
                             KAMITOCR 
-                        </a>
+
+                      
+                          </a>
                     </img>
                 </div>
 
@@ -78,8 +80,8 @@ this.dispara = function() {
 function Jugador(x) {
             this.x = x;
             this.y = 450;
-            this.w = 30;
-            this.h = 15;
+            this.w = 50;//30
+            this.h = 50;//15
             this.dibuja = function(x) {
                 this.x = x;
                 ctx.drawImage(imagen, this.x, this.y, this.w, this.h);
@@ -278,7 +280,7 @@ window.onload = function() {
                     imagen = new Image();
                     imagenEnemigo = new Image();
                     imagenEnemigo.src = "imagenes/invader.fw.png";
-                    imagen.src = "imagenes/torre.fw.jpg";
+                    imagen.src = "imagenes/torre.fw.png";
                     mensaje("INVASORES");
                     intro.play();
                     imagen.onload = function() {
@@ -304,14 +306,15 @@ de = setTimeout(disparaEnemigo,3500);
 <body>
 
 
-    <h1>  INVADERS </h1>
-<P>
 
-    <h1>Es un videojuego de arcade diseñado por Toshihiro Nishikado y lanzado al mercado en 1978.  </h1>
 
-<P>
 
-    <h1>En un principio fue fabricado y vendido por Taito Co. en Japón, para posteriormente ser licenciado para producción y distribución en Estados Unidos por Midway Games, división de Bally Technologies.</h1>
+<div align='center'>  <h1>  INVADERS </h1> </div>
+<div align='center'>Es un videojuego de arcade diseñado por Toshihiro Nishikado y lanzado al mercado en 1978.
+En un principio fue fabricado y vendido por Taito Co. en Japón, para posteriormente ser licenciado para producción y distribución en Estados Unidos por Midway Games, división de Bally Technologies.</div>
+
+    
+
 
         <canvas id="miCanvas" width="600px" height="500px">
         Tu navegador no soporta CANVAS
@@ -332,8 +335,8 @@ de = setTimeout(disparaEnemigo,3500);
           <source src="sonidos/gameOver.mp3">
         <source src="sonidos/gameOver.ogg">    
         </audio>
-<P>    
-    <h1>Space Invaders es uno de los primeros juegos de matar marcianos. Es uno de los videojuegos más importantes de la historia. Su objetivo es eliminar oleadas de alienígenas con un cañón láser y obtener la mayor cantidad de puntos posible. Para el diseño del juego, Nishikado se inspiró en Breakout, La guerra de los mundos y Star Wars.</h1>
+    
+<div align='center'>Space Invaders es uno de los primeros juegos de matar marcianos. Es uno de los videojuegos más importantes de la historia. Su objetivo es eliminar oleadas de alienígenas con un cañón láser y obtener la mayor cantidad de puntos posible. Para el diseño del juego, Nishikado se inspiró en Breakout, La guerra de los mundos y Star Wars.</div>
          <footer id="footer">
                 <p>
                     ©Desarrollado Cristian Castro 2021
